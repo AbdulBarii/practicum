@@ -16,6 +16,8 @@ Including another URLconf
 from IronApp.views import index
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from .import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),

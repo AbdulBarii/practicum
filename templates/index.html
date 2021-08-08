@@ -1,462 +1,170 @@
+{% load static %}
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<input id="env" value="prod" type="hidden">
-<!-- Google Tag Manager -->
-<script>
-    var env =   document.getElementById( 'env' ).value;
-    console.log(env);
-    if (env == "prod") {
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WP3SB7Q');
-    }
-</script>
-<!-- End Google Tag Manager -->
-<script src="https://www.googleoptimize.com/optimize.js?id=GTM-PBPXML7"></script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-
-
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        <meta name="keywords" content="Ship equipment,ship parts,marine spare parts,maritime spare parts supply and demand,ship industry e-commerce platform,ship industry b2b trading platform,marine spare parts online trading platform,ship equipment B2B trading platform" />
-        <meta name="description" content="ShipParts.com is a unique marine spare parts online trading platform,helping international shipowners to find the right suppliers for their ship spare parts and equipment.All our partner suppliers are certified by Bureau Veritas,assuring quality and reliablity.Offering numerous value-added services,ShipParts.com smooths the entire procurement process." />
-    
-
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-
-    <meta name="yandex-verification" content="0d6ed2d834fc8daf" />
-
-    <title>Iron Market Home</title>
-    
-
-
-
-<link href="/static/images/shipparts.ico" rel="bookmark" type="image/x-icon" />
-<link href="/static/images/shipparts.ico" rel="icon" type="image/x-icon" />
-<link href="/static/images/shipparts.ico" rel="shortcut icon" type="image/x-icon" />
-
-<link rel="stylesheet" type="text/css" href="https://static.shipparts.com/static/css/main.css?v=b65ad1d6c3" />
-
-<script type="text/javascript" src="https://static.shipparts.com/static/js/jquery-1.8.3.min.js?v=3576a6e73c"></script>
-<script type="text/javascript" src="https://static.shipparts.com/static/js/lodash.min.js?v=fd146a6a86"></script>
-
-
-<script type="text/javascript">
-	window.canonical_url = 'https://www.shipparts.com:443/';
-</script>
-
-    <link rel="stylesheet" type="text/css" href="https://static.shipparts.com/static/newcss/sps_common.css?v=d252bc02d6">
-    <link rel="stylesheet" type="text/css" href="https://static.shipparts.com/static/newcss/swiper.min.css?v=6af34d0737">
-    <link type="text/css" rel="stylesheet" href="https://static.shipparts.com/static/newcss/sps_homepage.css?v=36805dfa09">
-    
-    
-
-
-
-<script type="text/javascript" src="https://static.shipparts.com/static/js/msg_en.js?v=7b4c3168fb"></script>
-<script type="text/javascript" src="https://static.shipparts.com/static/js/funcData.js?v=8c7ae91f5e"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Market</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-
-<body class="en" style="background-color:#fff; ">
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP3SB7Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
+<body>
     
-        <input type="hidden" id="headNewIsLogin" value="未登录" data-islogin="0" data-grade="" />
-    
-    
-    <div class="sps_container_fluid sps_homePage" id="sps_homePage">
-        <div class="sps_new_home_bg">
-            <div class="sps_container sps_home_head">
-                <!--NAVIGATION START-->
-                <div class="sps_home_head_nav" data-state="">
-                    <div class="sps_home_head_nav_logo">
-                        <a href="https://www.shipparts.com:443/">
 
-                            <!-- <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_shippartslogo.png" alt="Best Marine spare parts B2B trading platform"/> -->
-                        <h1 style="color: #fff; text-align: center;">IRON MARKET</h1>
-                        </a>
-                    </div>
-                    <div class="sps_home_head_nav_menu">
-                        <ul>
-                            
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/buyer-guide" class="sps_link">For Buyer</a></li>
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/seller-guide" class="sps_link">For Seller</a></li>
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/about-us" class="sps_link">About Us</a></li>
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/contact-us" class="sps_link">Contact Us</a></li>
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/contact-us" class="sps_link">Login</a></li>
-                                <li class="p-l-15 p-r-15 hover_line"><a href="/info/contact-us" class="sps_link">Signup</a></li>
-
-                                
-                            
-                            
-                               
-                            
-                            
-                        </ul>
-                    </div>
-                </div>
-                <!--NAVIGATION END-->
-                <!--HOME BODY START-->
+<!-- Nav-bar start -->
 
 
-               
+<div class="row mx-auto bg-light ">
 
-
-                <div class="sps_home_head_content pos-r">
-                    <h1 class="f-s-48 f-c-ff f-w-b txt-l">Online marketplace for <br/>Ship Parts</h1>
-                    <p class="f-s-20 f-w-n f-c-ff f-sty-i m-t-24 l-h-28 txt-l"> Smarter Trading and Analytics</p>
-
-
-                </div>
-                <div class="sps_home_head_search p-t-35 p-b-36 pos-r" id="spsNewFormCategoriesEnter">
-                    <div class="sps_form">
-                        <div class="sps_form_categories" id="spsFormCategories">
-                            <b class="f-s-16 f-c-33 f-w-5 p-r-12">All Categories</b>
-                            <div id="formCategories"></div>
-                        </div>
-                        <div class="sps_form_div" id="spsFormDiv">
-                            <input type="text" placeholder="Company, Brand, Product, Etc." id="spsSearchInput" class="sps_searchInput" autocomplete="off">
-                            <div></div>
-                        </div>
-                        <button type="button" class="sps_searchBtn hover_btn f-c-ff f-s-18 txt-c f-w-5 m-l-16" id="spsSearchBtn">Search</button>
-                    </div>
-                </div>
-
-               
-
-                <!--HOME BODY END-->
-            </div>
-        </div>
-        <div class="sps_section_conatiner_fluid">
-            <div class="sps_container sps_home_section_one">
-
-
-
-                <div class="sps_IWantBuy_Body" id="spsBestSellingCategories">
-                    <h2 class="text-u txt-c f-s-40 f-c-33 f-w-6 l-h-48 p-t-30 ff-rr">Best-Selling Categories</h2>
-                    <p class="f-s-16 ff-r f-w-4 f-c-33 p-t-16 txt-c l-h-24 p-b-32">Equipment and Spares from over 18,000 and growing Manufacturers and Traders worldwide. <br/>Source equipment and spares on our Database of Reliable Sellers.</p>
-                    <p class="txt-l text-c f-s-24 f-w-7 f-c-33 ff-r">Hot Products</p>
-                    <div class="sps_HotProducts m-t-24 m-b-30">
-                        <div class="row">
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Cylinder Liner">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_cylinder.png" alt="Cylinder Liner">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Diesel Engine</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Cylinder Liner</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Centrifugai Pump">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_CentrifugalPump.png" alt="Centrifugal Pump">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Auxiliary Machinery</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Centrifugal Pump</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Valves">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_Valves.png" alt="Valves">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Valves & Pipe Fittings</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Valves</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Solenoid Valve">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_SolenoidValve.png" alt="Solenoid Valve">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Electrical Equipment And Automation</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Solenoid Valve</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Lifeboat">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_Lifeboat.png" alt="Lifeboat">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Life-saving Equipment</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Lifeboat</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Windlass">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_Windlass.png" alt="Windlass">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Deck Machinery</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Windlass</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=mooring rope">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_MooringRope.png" alt="Mooring Rope">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Ship Chandler</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Mooring Rope</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Anchor">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_Anchor.png" alt="Anchor">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Deck/Accommodation Outfitting</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Anchor</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=galley cooking range">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_GalleyCookingRange.png" alt="Galley Cooking Range">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">Galley Equipment</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Galley Cooking Range</p>
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.shipparts.com:443/globalSearch?keyword=Refrigeration compressor">
-                                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_RefrigerationCompressor.png" alt="Refrigeration Compressor">
-                                    <span class="f-s-12 f-c-99 f-w-4 txt-c ff-rr p-t-16">HVAC, Refrigeration System</span>
-                                    <p class="f-s-14 ff-rr txt-c f-c-33 f-w-5 p-t-10">Refrigeration Compressor</p>
-                                </a>
-                            </div>
-                        </div>
-                      
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-
-
-
-
-
-
-       
-<!-- 
-
-
-
-
-     <link type="text/css" rel="stylesheet" href="https://static.shipparts.com/static/newcss/sps_footer.css?v=f351c98aae">
-        <input id="env" value="prod" type="hidden">
-        <script>
-            var env = document.getElementById( 'env' ).value;
-            if (env == "prod") {
-                var _hmt = _hmt || [];
-                (function () {
-                    var hm = document.createElement("script");
-                    hm.src = "https://hm.baidu.com/hm.js?a69fa0355629153a317f712e56969aaa";
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(hm, s);
-                })();
-            }
-        </script>
-        
-        <script>(function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/381fdea8a3efec53a424f6ecd52e3737/2";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();
-        </script>
-        
-        
-        
-        <div id="spsVerifiedSupplier" class="pos-a sps_buyerSuS spsVerified">
-            <div class="display">
-                <i class="pos-a spsCloseClsBtn" id="buyClose3">
-                    <img class="cls" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_close.svg" alt="">
-                    <img class="clsA" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_closeA.svg" alt="">
-                </i>
-                <div class="body">
-                    <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_verifidSeller.svg" alt="">
-                    <p class="f-s-16 f-c-33 txt-c l-h-24 p-t-18 p-b-26">The Verified Supplier Service is for Mainland <br/>China supplier only</p>
-                </div>
-                <div class="bottom">
-                    <button class="f-c-sp f-s-14 f-w-4 txt-c">OK</button>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-        $('.sps_buyerSuS .spsCloseClsBtn').on('click', function(){
-            $('#spsVerifiedSupplier').css({'display':'none'});
-        })
-        var applyBvRecord = function () {
-            return {
-                //跳转BV首页
-                skipBVIndexPage: function () {
-                    var lang = "";
-                    if ($("body").hasClass("cn")) {
-                        lang = "cn";
-                    } else {
-                        lang = "en";
-                    }
-                    $.ajax({
-                        type: "get",
-                        url: basePath + "/bv/" + lang + "/toBvBefore",
-                        dataType: "json",
-                        contentType: "application/json",
-                        success: function (obj) {
-                            if (obj.data == 200) {
-                                window.open(basePath + "/bv/index");
-                            } else {
-                                $('#spsVerifiedSupplier').css('display', 'flex');
-                            }
-                        }
-                    });
-                }
-            }
-        }();
-        $(function () {
-            $(document).ajaxSuccess(function (event, xhr) {
-                var response = JSON.parse(xhr.responseText);
-                if (response.code != 'OK') {
-                    if (response.errorCode === 10001) {
-                        alert(msgError.error00052);
-                        location.reload();
-                    }
-                }
-            });
-            $("#spsVerifiedSupplier button").on("click", function () {
-                $("#spsVerifiedSupplier").hide();
-                window.open(basePath + "/bv/index");
-            })
-        });
-        </script>
-        
-                <div id="spsBuyerSellerSuccess" class="pos-a sps_buyerSuS">
-                    <div class="display">
-                        <i class="pos-a spsCloseClsBtn" id="buyClose">
-                            <img class="cls" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_close.svg" alt="">
-                            <img class="clsA" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_closeA.svg" alt="">
-                        </i>
-                        <div class="body">
-                            <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_success.svg" alt="">
-                            <p class="f-s-16 f-c-33 txt-c l-h-24 p-t-18 p-b-6">Thank you for your submission! <br/>ShipParts.com team will contact you within 24-hours.</p>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light  mx-auto ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Iron Market</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item"> <a class="nav-link " aria-current="page" href="#">For Buyer</a></li>
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="#">For Seller</a> </li>
+              <li class="nav-item">  <a class="nav-link " aria-current="page" href="#">About</a></li>
+              <li class="nav-item"> <a class="nav-link " aria-current="page" href="#">Contact Us</a> </li>      
+            </ul>    
+            <div class="signup_logout ">
+                <button type="button" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-primary">Sign-in</button>
                 
-                <div id="spsFavorite" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="body">
-                            <p class="f-s-14 f-c-33 txt-c l-h-24">
-                                <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_success.svg" alt="" class="m-r-16"> Favorite successfully, please go to Seller Center to view your favorites.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsNotFavorite" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="body">
-                            <p class="f-s-14 f-c-33 txt-c l-h-28"><img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_success.svg" alt="" class="m-r-16"> Cancel Favorite</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsBecomeBuyer" class="pos-a sps_buyerSuS sps_BecomeBuyer">
-                    <div class="display">
-                        <i class="pos-a spsCloseClsBtn" id="buyClose4">
-                            <img class="cls" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_close.svg" alt="">
-                            <img class="clsA" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_closeA.svg" alt="">
-                        </i>
-                        <div class="body">
-                            <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_verifidSeller.svg" alt="">
-                            <p class="f-s-16 f-c-33 txt-c f-w-6 l-h-24 p-t-18">Please be Seller first</p>
-                            <p class="f-s-14 f-c-33 txt-c l-h-22 p-t-12 p-b-26">Only Seller can favorite inquiry. Want to be Seller?</p>
-                        </div>
-                        <div class="bottom">
-                            <a class="f-c-sp f-s-14 f-w-4 txt-c" href="/info/become-partner-supplier">Confirm</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsErrorEmail" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="body">
-                            <p class="f-s-14 f-c-33 txt-c l-h-28"><img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_error.svg" alt="" class="m-r-16">Incorrect Email format, please enter again</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsErrorPhone" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="body">
-                            <p class="f-s-14 f-c-33 txt-c l-h-28"><img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_error.svg" alt="" class="m-r-16">Incorrect Phone Number format, please enter again</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsErrorTextArea" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="body">
-                            <p class="f-s-14 f-c-33 txt-c l-h-28"><img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_error.svg" alt="" class="m-r-16">Messages should not more than 1000 words</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="spsErrorMessage" class="pos-a sps_Fav">
-                    <div class="display p-l-36 p-r-36 p-b-16 p-t-16">
-                        <div class="head">
-                            <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_error.svg" alt="" class="m-b-12">
-                        </div>
-                        <div class="body">
-                        </div>
-                    </div>
-                </div>
-        
-                <div id="spsVerifyToLogin" class="pos-a sps_buyerSuS spsVerfiedLogin">
-                    <div class="display">
-                        <i class="pos-a spsCloseClsBtn" id="buyClose5">
-                            <img class="cls" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_close.svg" alt="">
-                            <img class="clsA" src="https://static.shipparts.com/static/newimages/sps_homepage/sps_closeA.svg" alt="">
-                        </i>
-                        <div class="body">
-                            <img src="https://static.shipparts.com/static/newimages/sps_homepage/sps_verifidSeller.svg" alt="">
-                            <p class="f-s-16 f-c-33 txt-c l-h-24 p-t-18 p-b-26"><b>Please login first</b><br/>Only seller can favorite inquiry.</p>
-                        </div>
-                        <div class="bottom">
-                            <a class="f-c-sp f-s-14 f-w-4 txt-c" href="/account/login">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script type="text/javascript" src="https://static.shipparts.com/static/newjs/waypoints.min.js?v=dfe0eedf8d"></script>
-            <script type="text/javascript" src="https://static.shipparts.com/static/newjs/jquery.counterup.min.js?v=ef36cca760"></script>
-            <script type="text/javascript" src="https://static.shipparts.com/static/newjs/swiper.min.js?v=fb13ef3e87"></script>
-            <script type="text/javascript" src="https://static.shipparts.com/static/newjs/echarts.min.js?v=f7a57b1bec"></script>
-            <script type="text/javascript" src="https://static.shipparts.com/static/newjs/sps_homepage.js?v=3acd16e72f"></script>
+              </div>  
+          </div>
+    
+         
+    
+        </div>
+      </nav>
+    
+</div>
+
+<!-- Nav-bar End -->
 
 
+<!-- Background Image start -->
 
+<div class="row bg_img fluid m-0 p-0" style="background-image: url({% static 'images/bg2.jpg' %});" >
 
-
-
- -->
-
-
-
-
-
+<div class="row background_content text-white text-center mt-5">
+  <h1>Online marketplace for spare parts, <br>services and solutions</h1>
   
+</div>
 
-        
+ 
+<div class=" row w-75 mx-auto">
+  <div class="d-flex search  ">
+    <div class="col-lg-6 "><input class="form-control " type="search" placeholder="Search" aria-label="Search"></div>
+    <div class="col-lg-4"><button class="btn btn-primary" type="submit">Search</button></div>
+  </div>
+</div>
+    
+  
+ </div>
+  
+    
+
+</div>
+
+<!-- Background Image End -->
 
 
+<!-- Product part start -->
+
+<div class="row container mx-auto ">
+
+  <div class="product_content text-center mt-5">
+    <h1>BEST-SELLING CATEGORIES</h1>
+  <p>Equipment and Spares from over 18,000 and growing Manufacturers and Traders worldwide.
+   <br> Source equipment and spares on our Database of Reliable Sellers.</p>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-12 col-md-6 col-lg-4 mb-2 ">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p5.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p6.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p7.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p5.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p5.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="{% static 'product/p5.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title fs-8">CARBON STEEL GATE VALVE ANSI FLANGED</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
 
 
+    
+
+  </div>
+  
+</div>
+<!-- Product part End -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
