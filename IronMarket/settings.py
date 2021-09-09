@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'index.apps.IndexConfig',
     'accounts.apps.AccountsConfig',
+    'product.apps.ProductConfig',
 
 ]
 
