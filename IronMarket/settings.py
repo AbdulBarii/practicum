@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'index.apps.IndexConfig',
     'accounts.apps.AccountsConfig',
     'product.apps.ProductConfig',
+    'mptt.apps.MpttConfig',
 
 ]
 
